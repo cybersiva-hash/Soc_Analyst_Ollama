@@ -1,7 +1,8 @@
 # AI-Powered SOC Alert Triage Pipeline
 
 An offline SOC (Security Operations Center) automation tool that captures live network traffic, detects anomalous packet volume from a source IP using `tshark`, and sends the resulting alert to a **locally-hosted LLM (Qwen2.5:7b via Ollama)** for automated triage. The model returns a structured JSON verdict — classification, confidence score, reasoning, and a recommended next action — with **no external API calls and no internet dependency**, making it suitable for air-gapped or isolated lab environments.
-
+Attacker VM: Ubuntu
+Monitoring/Attacked VM : Kali 
 ---
 
 ## Architecture / Workflow
@@ -35,6 +36,8 @@ An offline SOC (Security Operations Center) automation tool that captures live n
 ### Software
 | Tool | Purpose | Install |
 |---|---|---|
+| Ubuntu | Attacker/Analyser (as per choice) | Virtual Machine |
+| Kali | Attacker/Analyser (as per choice) | Virtual Machine |
 | Python 3.10+ | Runs the main script | Pre-installed on Kali/Ubuntu |
 | Wireshark/tshark | Packet capture | `sudo apt install tshark` |
 | Ollama | Local LLM runtime | `curl -fsSL https://ollama.com/install.sh \| sh` |
