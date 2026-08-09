@@ -178,17 +178,7 @@ Example verdict output:
 
 ## Screenshots
 
-**Checking the monitoring VM's IP address before configuring the script:**
-
-![IP address check](docs/screenshots/ip-check.png)
-
-**Full pipeline run — capture, detection, and AI-generated verdict:**
-
-![Full pipeline output](docs/screenshots/pipeline-run.png)
-
-> Add your own screenshots to a `docs/screenshots/` folder in the repo and update the paths above to match your filenames.
-
----
+<img width="1920" height="1080" alt="Screenshot 2026-08-09 171559" src="https://github.com/user-attachments/assets/0cd183b7-d3a8-4c15-b302-b9b431dfcc5b" />
 
 ## Troubleshooting
 
